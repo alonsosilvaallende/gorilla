@@ -12,6 +12,7 @@ from model_handler.glaive_handler import GlaiveHandler
 from model_handler.gorilla_handler import GorillaHandler
 from model_handler.gpt_handler import OpenAIHandler
 from model_handler.hermes_handler import HermesHandler
+from model_handler.hermes_outlines_handler import HermesOutlinesHandler
 from model_handler.llama_handler import LlamaHandler
 from model_handler.mistral_handler import MistralHandler
 from model_handler.nexus_handler import NexusHandler
@@ -71,6 +72,7 @@ handler_map = {
     "meetkai/functionary-medium-v2.4-FC": FunctionaryHandler,
     "databricks-dbrx-instruct": DatabricksHandler,
     "NousResearch/Hermes-2-Pro-Llama-3-8B": HermesHandler,
+    "NousResearch/Hermes-2-Pro-Llama-3-8B-Outlines": HermesOutlinesHandler,
     "NousResearch/Hermes-2-Pro-Llama-3-70B": HermesHandler,
     "NousResearch/Hermes-2-Pro-Mistral-7B": HermesHandler,
     "NousResearch/Hermes-2-Theta-Llama-3-8B": HermesHandler,
