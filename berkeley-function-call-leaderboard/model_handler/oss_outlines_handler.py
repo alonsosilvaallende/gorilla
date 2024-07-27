@@ -170,10 +170,9 @@ class OSSOutlinesHandler(BaseHandler):
         gpu_memory_utilization=0.9,
     ):
         import vllm
-        # Disable caching 
+        # Disable caching
         import outlines
-        import outlines.cache as cache
-        cache.disable()
+        outlines.caching.disable_cache()
         from vllm import LLM, SamplingParams
         from outlines import models, generate
 
